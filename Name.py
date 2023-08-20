@@ -9,3 +9,17 @@ def palindrome():
 
 
 palindrome()
+
+
+company = "Lucid Motors"
+
+First = company[:5]
+Second = company[6:]
+
+print(First,'\n',Second)
+
+for i in Second:
+    if i == ' ':
+        Second.strip()
+
+print(Second)
