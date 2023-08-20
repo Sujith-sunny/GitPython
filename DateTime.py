@@ -3,6 +3,11 @@ import datetime
 CurrentTime = datetime.datetime.now()
 print(CurrentTime,'Version 1')
 
+#New Block of code added in a another device to out git and we are syncing it with our git repository in our device
+
+CurrentDate = datetime.datetime.today()
+print(CurrentDate)
+
 import inspect
 print(inspect.getsource(datetime))
 
