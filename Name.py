@@ -24,7 +24,3 @@ for i in Second:
 
 print(Second)
 
-import math
-Given_Number = 5
-
-print(math.factorial(Given_Number))
