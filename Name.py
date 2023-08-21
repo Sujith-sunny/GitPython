@@ -25,4 +25,4 @@ for i in Second:
 print(Second)
 
 
-print('These are the Changes for Feature 1')
+print('This is the change for Feature 2')
