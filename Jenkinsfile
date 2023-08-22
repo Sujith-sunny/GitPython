@@ -1,22 +1,25 @@
 pipeline {
-  agent {
-    docker {
-      image 'python:3.8'
+  agent { dockerfile true }
+  triggers {
+    github {
+      secretToken "This is a secret text"
+      events = [push]
     }
   }
-
   stages {
-    stage('Build') {
+    stage('Checkout') {
       steps {
-        sh 'pip install -r requirements.txt'
-        sh 'python Name.py'
+        git 'https://github.com/Sujith-sunny/GitPython.git'
       }
     }
-
-    stage('Deploy') {
+    stage('Build') {
       steps {
-        sh 'docker build -t mydocker .'
-        sh 'docker push mydocker'
+        sh 'docker build -t Name python_repo:us-east-1/latest'
+      }
+    }
+    stage('Push') {
+      steps {
+        sh 'docker push 596264129479.dkr.ecr.us-east-1.amazonaws.com/python_repo:latest'
       }
     }
   }
