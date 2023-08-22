@@ -1,10 +1,6 @@
 pipeline {
   agent {dockerfile true}
 
-  triggers {
-    github { secretToken = "This is a secret text" events = [push] }
-  }
-
   stages {
     stage('Checkout') {
       steps {
