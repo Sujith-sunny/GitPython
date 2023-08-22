@@ -1,8 +1,8 @@
 pipeline {
-  agent any
+  agent {dockerfile true}
 
   triggers {
-    github { events = [push] }
+    github { secretToken = "This is a secret text" events = [push] }
   }
 
   stages {
