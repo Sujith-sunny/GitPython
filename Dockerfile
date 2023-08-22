@@ -1,4 +1,4 @@
-FROM git@github.com:Sujith-sunny/GitPython.git:master
+FROM git@github.com:Sujith-sunny/gitpython.git:master
 FROM python:3.8
 
 RUN pip install -r requirements.txt
