@@ -1,5 +1,6 @@
 pipeline {
-  agent { dockerfile true }
+  agent {
+  }
 
   triggers {
     github {
