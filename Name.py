@@ -27,4 +27,4 @@ print(Second)
 print('This is a change that is being made in Name.py')
 print('Another New change being made')
 
-print("This is a change is made on Aug 22nd 10:00pm")
+print("This is a change is made on Aug 22nd 10:20pm")
