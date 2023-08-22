@@ -1,7 +1,7 @@
 import datetime
 
 CurrentTime = datetime.datetime.now()
-print(CurrentTime,'Version 2')
+print(CurrentTime,'Version 2.0')
 
 #New Block of code added in a another device to out git and we are syncing it with our git repository in our device
 
