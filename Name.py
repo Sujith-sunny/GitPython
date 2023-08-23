@@ -1,11 +1,11 @@
 
 
 def palindrome():
-    name = 'Sujith Sunny'
+    name = 'racecar'
     if name[::-1] == name:
-        print('The given name {} is palindrome'. format(name))
+        print('Is palindrome')
     else:
-        print('The given name {} is not a palindrome'. format(name))
+        print('Not a palindrome')
 
 
 palindrome()
