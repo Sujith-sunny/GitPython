@@ -9,7 +9,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'docker build -t Name python_repo:us-east-1/latest'
+        sh 'docker build -t name python_repo:us-east-1/latest'
       }
     }
 
