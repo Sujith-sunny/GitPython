@@ -37,6 +37,7 @@ pipeline {
 
     stage('Push') {
       steps {
+        sh "docker tag python_repo:latest 596264129479.dkr.ecr.us-east-1.amazonaws.com/python_repo:latest"
         sh "docker push 596264129479.dkr.ecr.us-east-1.amazonaws.com/python_repo:latest"
       }
     }
